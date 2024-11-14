@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('nav a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = link.getAttribute('href');
+            const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
@@ -64,16 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0)';
-        });
-    });
-
-    // Smooth scroll for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
         });
     });
 });
