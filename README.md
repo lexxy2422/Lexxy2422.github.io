@@ -1,4 +1,4 @@
-# Personal Website - Adebayo Paul
+# Personal Website - Adebayo P oke
 
 ## Overview
 This is a modern, responsive personal website showcasing Adebayo Paul's professional profile, skills, and projects.
