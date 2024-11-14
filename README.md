@@ -41,6 +41,6 @@ The website is fully responsive and works on:
 MIT License
 
 ## Contact
-Adebayo Paul
-- GitHub: @paulexxy
+Adebayo P oke
+- GitHub: @lexxy2422
 - Email: your.email@example.com
